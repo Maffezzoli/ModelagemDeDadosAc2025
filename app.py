@@ -14,7 +14,14 @@ from methods.gaussian import (
 )
 from methods.root_finding import RootFindingError, construir_funcao, falsa_posicao, secante
 
-st.set_page_config(page_title="Hub de Métodos Numéricos", page_icon="🧮", layout="centered")
+LOGO_PATH = Path(__file__).resolve().parent / "Images" / "logo.png"
+LOGO_BASE64 = base64.b64encode(LOGO_PATH.read_bytes()).decode("utf-8")
+
+st.set_page_config(
+    page_title="Hub de Métodos Numéricos",
+    page_icon=f"data:image/png;base64,{LOGO_BASE64}",
+    layout="centered",
+)
 BASE_DIR = Path(__file__).resolve().parent
 IMAGENS_DIR = BASE_DIR / "Images"
 
