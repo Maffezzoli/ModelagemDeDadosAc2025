@@ -1,0 +1,30 @@
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+
+# Cache e artefatos Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+
+# Arquivos temporários e logs
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Configuração local
+*.env
+.env.local
+
+# Sistemas operacionais
+Thumbs.db
+.DS_Store
+
+# Streamlit
+.streamlit/
